@@ -1,0 +1,99 @@
+[
+  {
+    "objectID": "ref/lineages_classification.html",
+    "href": "ref/lineages_classification.html",
+    "title": "Lineages Classification Script",
+    "section": "",
+    "text": "Summary\n\nLabel variants of concern (VOC)\nAssign lineages to variant classification names\nAssign hex code colors to variant names",
+    "crumbs": [
+      "Code Reference",
+      "Lineages Classification Script"
+    ]
+  },
+  {
+    "objectID": "ref/index.html",
+    "href": "ref/index.html",
+    "title": "Reference Guide",
+    "section": "",
+    "text": "Lineage Extract\n\nExtract general lineage data from CDC\nFilter to WA data\nClean, transform, and output\n\n\n\n\n\n\nLineage Classifications\n\nRead in lineage data\nAssign lineage classifications\nAssign hex colors for plots",
+    "crumbs": [
+      "Code Reference",
+      "Reference Guide"
+    ]
+  },
+  {
+    "objectID": "guide/install.html",
+    "href": "guide/install.html",
+    "title": "Installation",
+    "section": "",
+    "text": "Installation\nUsage\nContributing\nLicense",
+    "crumbs": [
+      "User Guide",
+      "Installation"
+    ]
+  },
+  {
+    "objectID": "guide/install.html#run-code-with-github-codespace",
+    "href": "guide/install.html#run-code-with-github-codespace",
+    "title": "Installation",
+    "section": "Run Code with Github Codespace",
+    "text": "Run Code with Github Codespace\nIf you want to run the code but don’t want to install anything on your local machine, use a Github Codespace.\n\nAt the root of the repo, click on the Code drop down button\n\nOn the right there is a tab called Codespaces.\nIf there is an existing Codespace, use that one\nIf there are no Codespaces, you can create a new one. The default codespace configuration has R and Rstudio set up for it (so probably use that one)\n\n\n\n\n\n\n\nYou can run Rstudio within a Codespace by:\n\nGo into the VS Code section called “Ports” in the Codespace\nFind the Rstudio port\nClick the Open in Browser button\n\n\n\n\n\n \n\nTroubleshooting\n\nIf you make a new Codespace you may need to install the R packages onto the machine again\nThe easiest way is to open the Rstudio port (see point 2 above)\nIn the Rstudio console execute renv::restore() and follow its instructions. It should download all the packages in the renv folder in this repo\n\n\nNow you can run this code in a browser window without needing to install any software on your computer 😎",
+    "crumbs": [
+      "User Guide",
+      "Installation"
+    ]
+  },
+  {
+    "objectID": "guide/install.html#variables",
+    "href": "guide/install.html#variables",
+    "title": "Installation",
+    "section": "Variables",
+    "text": "Variables\nThe variables produced by the scripts are used in the Sequencing and Variants Report. Here’s a list:\n\n\n\n\n\n\n\nVariables\nDescription\n\n\n\n\ncdc_class\nVariable indicating VOC (variant of concern) or VBM (variant being monitored)\n\n\nwho_name\nVariable indicating the WHO name\n\n\ndoh_variant_name\nGrouping variable in WA DOH Sequencing and Variant report\n\n\nhex_code\nHex color for doh_variant_name group\n\n\nlineage_reporting_group\nVariable indicating reporting group of lineage coded as: 1: Currently monitoring 2: Formerly monitoring 3: Formerly circulating, not monitored\n\n\nreport_table_name\nVariable name in numerical/pango form for table outputs",
+    "crumbs": [
+      "User Guide",
+      "Installation"
+    ]
+  },
+  {
+    "objectID": "guide/index.html",
+    "href": "guide/index.html",
+    "title": "COVID-19 Lineages",
+    "section": "",
+    "text": "This repo contains scripts that will pull lineages of interest from the CDC and transform them.\nThe repo will output a .csv file called lineages.csv that will be updated whenever new lineages are updated from the CDC. You can refresh/fetch this git repo for new changes and the .csv file will be updated.\nTo run the process:\nCode\n\nR console\n\nsource(\"scripts/lineages_public_repo.R\")\nCode\n\nR console\n\nsource(\"scripts/lineages_classification_for_test_repo.R\")",
+    "crumbs": [
+      "User Guide"
+    ]
+  },
+  {
+    "objectID": "guide/index.html#variables",
+    "href": "guide/index.html#variables",
+    "title": "COVID-19 Lineages",
+    "section": "Variables",
+    "text": "Variables\nThe variables produced by the scripts are used in the Sequencing and Variants Report. Here’s a list:\n\n\n\n\n\n\n\nVariables\nDescription\n\n\n\n\ncdc_class\nVariable indicating VOC (variant of concern) or VBM (variant being monitored)\n\n\nwho_name\nVariable indicating the WHO name\n\n\ndoh_variant_name\nGrouping variable in WA DOH Sequencing and Variant report\n\n\nhex_code\nHex color for doh_variant_name group\n\n\nlineage_reporting_group\nVariable indicating reporting group of lineage coded as: 1: Currently monitoring 2: Formerly monitoring 3: Formerly circulating, not monitored\n\n\nreport_table_name\nVariable name in numerical/pango form for table outputs",
+    "crumbs": [
+      "User Guide"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n\nNORTHWEST PATHOGEN GENOMICS CENTER OF EXCELLENCE\n\nCOVID-19 Lineages Extract\n",
+    "section": "",
+    "text": "NORTHWEST PATHOGEN GENOMICS CENTER OF EXCELLENCE\n\nCOVID-19 Lineages Extract\n\nThis site documents code from Washington State Department of Health that ingests, cleans, transforms, and outputs Washington State COVID-19 lineage data.\nPlease click on User Guide for a more detailed description.\nGet started\n\n\n\n\n\n\n  \n\n\n\nUser Guides\n\n\n\n\n\n\n\nCode Reference\n\n\n\n\n\n\n\n\nArticles",
+    "crumbs": [
+      "User Guide",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "ref/lineages.html",
+    "href": "ref/lineages.html",
+    "title": "Lineages Extract",
+    "section": "",
+    "text": "Summary\n\nPull lineage data from the CDC\nTransform and clean the data\nOutput to a csv file",
+    "crumbs": [
+      "Code Reference",
+      "Lineages Extract"
+    ]
+  }
+]
