@@ -1,0 +1,36 @@
+---
+title: "Lineages Extract"
+description: Look under the hood of the lineages.R script
+date: September 1, 2023
+date-modified: today
+author: 
+  - name: Frank Aragona
+    email: frank.aragona@doh.wa.gov
+    affiliations:
+      - Washington Department of Health
+      - Data Integration/Quality Assurance
+format: 
+  html:
+    code-fold: show
+    code-overflow: wrap
+    class-output: "watch"
+    toc: true
+    number-sections: true
+execute: 
+  eval: true
+  freeze: true
+
+---
+
+
+:::{.note}
+
+{{< bi file-earmark-check-fill size=4em >}} **Summary**
+
+-   Pull lineage data from the CDC
+-   Transform and clean the data
+-   Output to a csv file
+
+:::
+
+

@@ -1,0 +1,30 @@
+---
+title: "Lineages Classification Script"
+description: Look under the hood of the lineages_classification.R script
+date: September 1, 2023
+date-modified: today
+author: 
+  - name: 
+    email: 
+    affiliations:
+      - Washington Department of Health
+      - Molecular Epi
+format: 
+  html:
+    code-fold: show
+    code-overflow: wrap
+    class-output: "watch"
+execute: 
+  eval: false
+---
+
+::: note
+
+{{< bi file-earmark-text size="3x" >}} **Summary**
+
+-   Label variants of concern (VOC)
+-   Assign lineages to variant classification names
+-   Assign hex code colors to variant names
+
+:::
+
